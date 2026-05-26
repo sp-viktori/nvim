@@ -92,3 +92,6 @@ vim.keymap.set("i", "<Tab>", function()
 end, { expr = true })
 
 -- NOTE: The default theme should apply itself (see theme.lua). Don't enable it here.
+
+-- Dry eyes
+vim.o.guicursor = "n-v-c-sm:block-blinkon0,i-ci-ve:ver25-blinkon0,r-cr-o:hor20-blinkon0,t:block-blinkon0-TermCursor"
