@@ -1,5 +1,6 @@
 return {
   "stevearc/conform.nvim",
+  enabled = false,
   event = { "BufWritePre" },
   cmd = { "ConformInfo", "FormatDisable", "FormatEnable" },
   keys = {

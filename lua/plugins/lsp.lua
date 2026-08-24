@@ -1,7 +1,9 @@
 return {
   {
     'williamboman/mason.nvim',
-    opts = {},
+    -- Put Mason's bin at the END of PATH so project-local tools (e.g. an
+    -- activated venv's ruff/black) win, with Mason as the fallback.
+    opts = { PATH = 'append' },
     keys = {
       { '<leader>cm', '<cmd>Mason<cr>', desc = 'Mason' },
     },
