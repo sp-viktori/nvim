@@ -10,6 +10,9 @@ return {
       close_if_last_window = false,
       filesystem = {
         follow_current_file = { enabled = true },
+        -- don't `tcd` when the tree root changes (navigating up, reveal outside cwd);
+        -- that tab-local cwd got saved into sessions and broke fzf-lua's cwd
+        bind_to_cwd = false,
       },
       window = {
         position = "right",
